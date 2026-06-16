@@ -34,7 +34,7 @@ Darf alles auf S3, aber nur auf dem Bucket `bucket-for-s3-user`.
 }
 ```
 
-Der Deny-Teil sperrt alles ab, was nicht S3 ist und nicht zu diesem Bucket gehört.
+Der Deny-Teil sperrt alles ab, was nicht S3 ist und nicht zu diesem Bucket gehört
 
 ### ec2-operator
 Darf starten und stoppen, aber nicht löschen. `DescribeInstances` ist nötig, damit man die Instances sieht.
