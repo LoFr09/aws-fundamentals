@@ -1,0 +1,30 @@
+ {
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ReadEC2",
+      "Effect": "Allow",
+      "Action": "ec2:Describe*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadCloudWatch",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:Describe*",
+        "cloudwatch:Get*",
+        "cloudwatch:List*"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadS3",
+      "Effect": "Allow",
+      "Action": [
+        "s3:Get*",
+        "s3:List*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
